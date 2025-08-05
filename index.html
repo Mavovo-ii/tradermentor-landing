@@ -16,7 +16,14 @@
         <p class="text-lg md:text-xl mb-6">
           An AI mentor that helps you stick to your strategy — not your emotions.
         </p>
-        <form name="early-access" netlify class="flex flex-col sm:flex-row justify-center gap-4">
+        <form
+          name="early-access"
+          method="POST"
+          data-netlify="true"
+          action="/thank-you"
+          class="flex flex-col sm:flex-row justify-center gap-4"
+        >
+          <input type="hidden" name="form-name" value="early-access" />
           <input
             type="email"
             name="email"
